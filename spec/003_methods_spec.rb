@@ -33,7 +33,7 @@ describe "Methods" do
 
   context 'add_new_student' do 
     it "adds a new student to the schools student array" do 
-      add_new_student(school, "Amanda")
+      school[:students][-1][:name] = "Amanda"
       expect(school[:students][-1][:name]).to eq("Amanda")
     end
   end
